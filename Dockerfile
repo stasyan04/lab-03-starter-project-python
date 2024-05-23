@@ -7,7 +7,7 @@ ENV PATH="/app/.venv/bin:$PATH"
 
 COPY requirements/backend.txt requirements.txt
 
-RUN pip install --no-cache-dir -r requirements/backend.txt
+RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 8080
 
 COPY . .
